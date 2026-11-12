@@ -2,11 +2,11 @@
 #         make test-model (pure-Python golden/perf-model tests, no simulator needed)
 SIM ?= verilator
 TOPLEVEL_LANG ?= verilog
-VERILOG_SOURCES = $(PWD)/rtl/pe.sv
-TOPLEVEL = pe
-COCOTB_TOPLEVEL = pe
-MODULE = tests.test_pe
-COCOTB_TEST_MODULES = tests.test_pe
+VERILOG_SOURCES = $(PWD)/rtl/pe.sv $(PWD)/rtl/systolic_array.sv
+TOPLEVEL = systolic_array
+COCOTB_TOPLEVEL = systolic_array
+MODULE = tests.test_array
+COCOTB_TEST_MODULES = tests.test_array
 EXTRA_ARGS += --trace --trace-structs -Wno-fatal
 export PYTHONPATH := $(PWD):$(PYTHONPATH)
 

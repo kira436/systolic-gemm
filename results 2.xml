@@ -1,0 +1,14 @@
+<testsuites name="results">
+  <testsuite name="all" package="all">
+    <property name="random_seed" value="1794370346" />
+    <testcase name="directed_load_then_mac" classname="tests.test_pe" file="/Users/kirannagendra/Desktop/claude/systolic-gemm/tests/test_pe.py" lineno="37" time="0.0017881393432617188" sim_time_ns="41.001" ratio_time="22929.4211072">
+      <failure message="Test failed with RANDOM_SEED=1794370346" />
+    </testcase>
+    <testcase name="extremes" classname="tests.test_pe" file="/Users/kirannagendra/Desktop/claude/systolic-gemm/tests/test_pe.py" lineno="46" time="0.0011391639709472656" sim_time_ns="51.001" ratio_time="44770.55217748012">
+      <failure message="Test failed with RANDOM_SEED=1794370346" />
+    </testcase>
+    <testcase name="random_stream" classname="tests.test_pe" file="/Users/kirannagendra/Desktop/claude/systolic-gemm/tests/test_pe.py" lineno="57" time="0.0008518695831298828" sim_time_ns="41.00099999999999" ratio_time="48130.60685810242">
+      <failure message="Test failed with RANDOM_SEED=1794370346" />
+    </testcase>
+  </testsuite>
+</testsuites>

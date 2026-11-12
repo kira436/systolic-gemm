@@ -23,7 +23,7 @@ module pe (
     //assign a_out    = '0;
     //assign psum_out = '0;
     logic signed [7:0]  weight;
-    always_ff @(posedge clk or negedge rst_n) begin
+    always_ff @(posedge clk) begin   // synchronous reset: rst_n only sampled on the clock edge
         if (!rst_n) begin
             a_out <= '0;
             psum_out <= '0;
